@@ -1,0 +1,145 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+
+
+body{
+    background-color: #1B263B;
+}
+
+.FContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background-color: #bdf347;
+    align-items: center;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Navigasi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Aktif{
+    background-color: white;
+    padding: 8px 5px;
+    border-radius: 10px;
+}
+
+.Aktif:hover{
+    background-color: white !important;
+    color: #1B263B !important;
+}
+
+.Navigasi > li{
+    list-style-type: none;
+    padding: 15px;
+}
+
+.Navigasi > li > a{
+    color: #1B263B;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.Navigasi > li > a:hover{
+    padding: 8px 5px;
+    background-color: #1B263B;
+    color: #bdf347;
+    border-radius: 10px;
+    
+}
+
+.Pembungkus_Foto{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 50px;
+
+    transform: translateX(50px);
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.Pembungkus_Foto > h1{
+    color: #bdf347;
+}
+
+#Pak_Vinsen{
+    background-color: #bdf347;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.Text_Profil{
+    width: 550px;
+}
+
+.info-tabel, td {
+    padding: 5px 90px 0px 0px;
+    color: white;
+}
+
+.Pembungkus-Tabel{
+    border: 2px solid #bdf347;
+    padding: 0px 0px 5px 7px ;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.Pembungkus_Selanjutnya{
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+#Selanjutnya{
+    text-decoration: none;
+    color: #1B263B;
+    width: 165px;
+    background-color: #bdf347;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    transition: all 0.3s ease-in-out;
+}
+
+#Selanjutnya:hover{
+    color: #bdf347;
+    background-color: #1B263B;
+    text-decoration: underline white;
+}
+
+
+
